@@ -50,9 +50,16 @@
     </head>
     <body>
         <script>
+        funtion game(){
+            var buttonGame = document.getElementById("game_button");
+            var attrGame = document.createAttribute("src");
+            attrGame.value = "https://scratch.mit.edu/projects/94346478/";
+            buttonGame.setAttributeNode(attrGame);
+        }
         </script>
         <button id ="game_button"onclick="game()">Game</button>
         <button id ="learn_button"onclick="Learn">Learn</button>
+        <iframe id ="iframe" frameborder="0" src=""></iframe>
         <!--<iframe id ="iframe" frameborder = "0" src='https://scratch.mit.edu/projects/94346478/'></iframe>-->
     </body>
     
