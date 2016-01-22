@@ -3,6 +3,6 @@
   // var iframe = document.createElement('iframe');
    //iframe.src = 'google.com';
    //document.body.appendChild(iframe);
-   window.alert('hi person!!!')
+   window.alert;
 
 };
