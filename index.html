@@ -54,16 +54,14 @@
     <body>
         <script>
         function game(){
-            var buttonGame = document.getElementById("iframe");
-            var attrGame = document.createAttribute("src");
-            attrGame.value = "https://scratch.mit.edu/projects/94346478/";
-            buttonGame.setAttribute(attrGame);
+            var buttonGame = document.createElement("iframe");
+            buttonGame.createAttribute("src","https://scratch.mit.edu/projects/94346478/");
+            
         }
         </script>
-        <button id="game_button">Game</button>
+        <button id="game_button" onclick="game();">Game</button>
         <button id='learn_button'>Learn</button>
-        <iframe id ="iframe" frameborder="0" src=""></iframe>
-        <!--<iframe id ="iframe" frameborder = "0" src='https://scratch.mit.edu/projects/94346478/'></iframe>-->
+       
     </body>
     
 </html>
