@@ -53,13 +53,13 @@
     </head>
     <body>
         <script>
-        function game(){
+        document.getElementById("game_button").onclick = function(){
             var buttonGame = document.createElement("iframe");
-            buttonGame.createAttribute("src","https://scratch.mit.edu/projects/94346478/");
+            buttonGame.src = "https://scratch.mit.edu/projects/94346478/"
             document.body.appendChild(buttonGame);
-        }
+        };
         </script>
-        <button id="game_button" onclick="game();">Game</button>
+        <button id="game_button" >Game</button>
         <button id='learn_button'>Learn</button>
        
     </body>
