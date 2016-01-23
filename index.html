@@ -59,9 +59,13 @@
     </body>
     <script>
         function test(){
+            var button1 = document.getElementById('game_button');
+            button1.parentNode.removeChild(button1);
+            var button2 = document.getElementById('learn_button');
+            button2.parentNode.removeChild(button2);
             var x = document.createElement('iframe');
-            x.setAttribute("src","https://www.google.com/")
-            x.setAttribute("id","iframe")
+            x.setAttribute("src","https://www.google.com/");
+            x.setAttribute("id","iframe");
             document.body.appendChild(x);
         }
     </script>
