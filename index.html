@@ -60,7 +60,9 @@
     <script>
         function test(){
             var x = document.createElement('iframe');
-            x.src="https://drive.google.com/drive/my-drive"
+            x.src="https://drive.google.com/drive/my-drive";
+            x.style.height="100%";
+            x.style.width="100%";
             document.body.appendChild(x);
         }
     </script>
