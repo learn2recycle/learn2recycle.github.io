@@ -59,7 +59,9 @@
     </body>
     <script>
         function test(){
-            window.alert("hi");
+            var x = document.createElement('iframe');
+            x.src="http://www.google.com";
+            document.body.appendChild(x);
         }
     </script>
     
