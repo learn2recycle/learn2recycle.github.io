@@ -65,6 +65,7 @@
             button2.parentNode.removeChild(button2);
             var x = document.createElement('iframe');
             document.body.appendChild(x);
+            console.log('aftercreateiframe');
             var findIframe = document.getElementsByTagName('iframe')[0];
             var idattr = document.createAttribute('id');
             idattr.value="iframe";
@@ -72,6 +73,7 @@
             var srcattr = document.createAttribute('id');
             srcattr.value="https://www.google.com/";
             findIframe.setAttributeNode(srcattr);
+            console.log('end');
         }
     </script>
     
