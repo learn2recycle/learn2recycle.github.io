@@ -56,9 +56,24 @@
         </style>
     </head>
     <body>
+        <table>
+            <tr>
+                <td>
+                    <button id="game_button" onclick="game();">Game</button>
+                    <button id="learn_button" onclick="learn();">Learn</button>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td id="txtLearn">
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
         
-        <button id="game_button" onclick="game();">Game</button>
-        <button id="learn_button" onclick="learn();">Learn</button>
        
     </body>
     <script>
@@ -79,7 +94,7 @@
             document.body.appendChild(x);
         }
         function learn(){
-            document.write("[PUT INFO HERE]")
+            document.getElementById('txtLearn').innerHTML = "[PUT INFO HERE]";
         }
     </script>
     
