@@ -68,28 +68,13 @@
     </head>
     <body background = "http://embed.polyvoreimg.com/cgi/img-thing/size/y/tid/134889552.jpg">
         
-         <button id="game_button" onclick="game();">Game</button>
+         <button id="game_button" onclick="location.href='Game.html'">Game</button>
          <button id="learn_button" onclick="location.href='learn.html';">Learn</button>
         
        
     </body>
     <script>
-        function game(){
-            var button1 = document.getElementById('game_button');
-            button1.parentNode.removeChild(button1);
-            var button2 = document.getElementById('learn_button');
-            button2.parentNode.removeChild(button2);
-            var x = document.createElement('iframe');
-            x.setAttribute("src","//scratch.mit.edu/projects/embed/94346478/?");
-            x.setAttribute("id","iframe");
-            x.setAttribute('allowtransparency','true');
-            x.setAttribute('width','820');
-            x.setAttribute('height','680');
-            x.setAttribute('autostart','false');
-            x.setAttribute('frameborder','0');
-            x.setAttribute('allowfullscreen','');
-            document.body.appendChild(x);
-        }
+       
     </script>
     
 </html>
