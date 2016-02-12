@@ -3,8 +3,26 @@
     <head>
         <title>Save our Planet- Game</title>
         <style>
+            .instructions{
+            position:absolute;
+            
+            font-family:impact;
+            font-weight:normal;
+            
+            }
+            #instructionsheadline{
+                left:130px;
+                top:45px;
+                font-size:40px;
+            }
+            #instructionsp{
+               left:100px;
+                top:130px;
+                
+                font-size:15px;
+            }
             #iframe{
-                margin-left:350px;
+                margin-left:500px;
                 background-color:transparent;
                 border:none;
             }
@@ -37,8 +55,20 @@
         </style>
     </head>
     <body background="http://embed.polyvoreimg.com/cgi/img-thing/size/y/tid/134889552.jpg">
+
         <iframe src= "//scratch.mit.edu/projects/embed/94346478/?" id="iframe" allowtransparency="true" width="820" height="680" autostart="false" frameborder="0" allowfullscreen> <h4> For some reason, you browser cannot diplay our game.  Sorry about that!</h4></iframe>
         <button id = "home_button" onclick="location.href='index.html';">Home</button>
-       
+        <h3 class="instructions" id="instructionsheadline">Instructions:</h3>
+        
+            <ol class="instructions" id="instructionsp">
+                <li>If you see a big green flag,click it to load the game</li>
+                <br>
+                <li>Press the space key to start a new game </li>
+                <br>
+                <li>When you're ready, click inside the game to play!</li>
+            </ol>
+      
+
     </body>
+    
 </html>
