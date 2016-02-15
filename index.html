@@ -74,7 +74,16 @@
        
     </body>
     <script>
-       
+       var w= window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+ 
+    var h = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    var buttongame = (w-100)/2;
+    document.getElementById('game_button').style.left = buttongame;
+    document.getELementById('learn_button').style.left = buttongame;
     </script>
     
 </html>
