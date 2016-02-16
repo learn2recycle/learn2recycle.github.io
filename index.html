@@ -32,7 +32,7 @@
                 font-weight:normal;
                 font-size:25px;
                 font-family:impact;
-                 -webkit-transition-duration: 0.4s; /* Safari */
+                -webkit-transition-duration: 0.4s; /* Safari */
                 -moz-transition-duration: 0.4s;
                 -o-transition-duration: 0.4s;
                 transition-duration: 0.4s;
@@ -63,14 +63,18 @@
                background-color:black;
                 color: #99FFFF;
             }
+            #introVid{
+                position:absolute;
+                top:100px;
+            }
             
         </style>
     </head>
     <body background = "http://embed.polyvoreimg.com/cgi/img-thing/size/y/tid/134889552.jpg">
         
          <button id="game_button" onclick="location.href='Game.html';">Game</button>
-         <button id="learn_button" onclick="location.href='learn.html';">Learn</button>
-        
+         <!--<button id="learn_button" onclick="location.href='learn.html';">Learn</button>-->
+        <iframe id="introVid"width="560" height="315" src="https://www.youtube.com/embed/YPnuxmS1zFE" frameborder="0" allowfullscreen> For some reason, you cannot view our video. <br></br> Sorry about that!</iframe>
        
     </body>
     <script>
@@ -82,14 +86,16 @@
     || document.documentElement.clientHeight
     || document.body.clientHeight;
     console.log(w);
-    var buttongame = (w-100)/2;
+    var buttongame = ((w-100)/2);
     console.log(buttongame);
-    var buttontopval = (h-110)/2;
-    var buttontopval2 = buttontopval+60;
+    var buttontopval = ((h-110)/2)+340;
+   // var buttontopval2 = buttontopval+60;
     document.getElementById('game_button').style.left = buttongame+"px";
-    document.getElementById('learn_button').style.left = buttongame+"px";
+    //document.getElementById('learn_button').style.left = buttongame+"px";
     document.getElementById('game_button').style.top = buttontopval+"px";
-    document.getElementById('learn_button').style.top = buttontopval2+"px";
+    //document.getElementById('learn_button').style.top = buttontopval2+"px";
+    document.getElementById('learn_button').style.left = buttongame+"px";
+    document.getElementById('learn_button').style.left = buttongame+"px";
     </script>
     
 </html>
