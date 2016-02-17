@@ -71,6 +71,16 @@
                 text-align:center;
                 font-family:arial;
             }
+            #credits{
+                font-size:10px;
+                font-family:arial;
+                position:absolute;
+            }
+            #joe{
+                font-size:8px;
+                font-family:absolute;
+                position:absolute;
+            }
             
         </style>
     </head>
@@ -78,7 +88,10 @@
         
          <button id="game_button" onclick="location.href='Game.html';">Game</button>
          <!--<button id="learn_button" onclick="location.href='learn.html';">Learn</button>-->
-         <iframe id="introVid"width="560" height="315" src="https://www.youtube.com/embed/YPnuxmS1zFE?rel=0" frameborder="0" allowfullscreen> Unfortunately, our introduction video is unable to display on your computer.<br></br>Try watching our video <a href="https://www.youtube.com/watch?v=YPnuxmS1zFE">here.</a><br>Sorry about that!</iframe>       
+         <iframe id="introVid"width="560" height="315" src="https://www.youtube.com/embed/YPnuxmS1zFE?rel=0" frameborder="0" allowfullscreen> Unfortunately, our introduction video is unable to display on your computer.<br></br>Try watching our video <a href="https://www.youtube.com/watch?v=YPnuxmS1zFE">here.</a><br>Sorry about that!</iframe>    
+         <p id = "credits">Made by Chysci 2.0.  A Special thanks to Organic Diversions for helping us in our research for this project!!!  Thank You!  </p>
+         <br>
+         <p id = "joe">Joe!</p>
     </body>
     <script>
        var w= window.innerWidth
@@ -93,6 +106,8 @@
     console.log(buttongame);
     var buttontopval = ((h-110)/2)+240;
     var iframetopval = (w-560)/2;
+    var creditsspot = h-30;
+    var joespot = creditsspot+13;
    // var buttontopval2 = buttontopval+60;
     document.getElementById('game_button').style.left = buttongame+"px";
     //document.getElementById('learn_button').style.left = buttongame+"px";
@@ -100,6 +115,8 @@
     //document.getElementById('learn_button').style.top = buttontopval2+"px";
     //document.getElementById('learn_button').style.left = buttongame+"px";
     document.getElementById('introVid').style.left = iframetopval+"px";
+    document.getElementById('credits').style.left = creditsspot+"px";
+    document.getElementById('joe').style.left = joespot+"px";
     </script>
     
 </html>
