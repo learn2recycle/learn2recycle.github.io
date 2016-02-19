@@ -119,6 +119,36 @@
     document.getElementById('introVid').style.left = iframetopval+"px";
     document.getElementById('credits').style.top = creditsspot+"px";
     document.getElementById('joe').style.top = joespot+"px";
+    go();
+window.addEventListener('resize', go);
+
+function go(){
+    
+     w= window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+ 
+    h = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    console.log(w);
+     buttongame = ((w-100)/2);
+    console.log(buttongame);
+     buttontopval = ((h-110)/2)+240;
+    iframetopval = (w-560)/2;
+     creditsspot = h-30;
+     joespot = creditsspot+13;
+    
+    
+ document.getElementById('game_button').style.left = buttongame+"px";
+    //document.getElementById('learn_button').style.left = buttongame+"px";
+    document.getElementById('game_button').style.top = buttontopval+"px";
+    //document.getElementById('learn_button').style.top = buttontopval2+"px";
+    //document.getElementById('learn_button').style.left = buttongame+"px";
+    document.getElementById('introVid').style.left = iframetopval+"px";
+    document.getElementById('credits').style.top = creditsspot+"px";
+    document.getElementById('joe').style.top = joespot+"px";
+}
     </script>
     
 </html>
