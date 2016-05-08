@@ -5,7 +5,7 @@
         <link rel="shortcut icon" href="Web Logo.ico">
         <style> 
             #iframe{
-                margin-left:500px;
+               
                 background-color:transparent;
                 border:none;
             }
@@ -49,7 +49,10 @@
         <button id = "home_button" onclick="location.href='/';">Home</button>
        
 <!-- https://drive.google.com/file/d/0B-1SpBGKzZyLNVJ2eFI3a1hYdnM/view?usp=sharing -->
-<script>
+
+    </body>
+    
+    <script>
         var gameFrame = document.getElementById("iframe");
         var w= window.innerWidth
     || document.documentElement.clientWidth
@@ -59,16 +62,19 @@
     || document.documentElement.clientHeight
     || document.body.clientHeight;
     var gF_Top= (h - 640)/2;
-    var gF_Left= (w - 772.13930348259)/2;
-
-    gameFrame.style.top = gF_Top + "px";
-    gameFrame.style.left = gF_Left + "px";
+    var gF_Left= (w - 772)/2;
+    var gftopreal = gF_Top + "px";
+    var gfleftreal = gF_Left + "px";
+    go();
+    window.addEventListener('resize',go);
+    
+    function go(){
+      gameFrame.style.marginTop = gftopreal;
+    gameFrame.style.marginLeft = gfleftreal;  
+    }
     
     
     </script>
-    </body>
-    
-    
 </html>
 <!-- <div style="height: 50px; width: 242px; background: #666 url('http://z.hubimg.com/x/quiz.png') no-repeat scroll 24px 10px;"></div><div style="border-left: 1px solid #ccc; border-right: 1px solid #ccc; width: 240px;">
 
