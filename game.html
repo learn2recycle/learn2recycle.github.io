@@ -3,64 +3,11 @@
     <head>
         <title>Save our Planet- Game</title>
         <link rel="shortcut icon" href="Web Logo.ico">
-        <style>
-            .instructions{
-                position:absolute;
-                font-weight:normal;
-                -webkit-transition-duration: 0.4s; /* Safari */
-                -moz-transition-duration: 0.4s;
-                -o-transition-duration: 0.4s;
-                transition-duration: 0.4s;
-            }
-            h3.instructions{
-                font-family:impact;
-                font-size:40px;
-                -webkit-transition-duration: 0.4s; /* Safari */
-                -moz-transition-duration: 0.4s;
-                -o-transition-duration: 0.4s;
-                transition-duration: 0.4s;
-            }
-            ol.instructions{
-                font-family:arial;
-                -webkit-transition-duration: 0.4s; /* Safari */
-                -moz-transition-duration: 0.4s;
-                -o-transition-duration: 0.4s;
-                transition-duration: 0.4s;
-            }
-            ul.instructions{
-                font-family:arial;
-                -webkit-transition-duration: 0.4s; /* Safari */
-                -moz-transition-duration: 0.4s;
-                -o-transition-duration: 0.4s;
-                transition-duration: 0.4s;
-
-            }
-            #instructionsheadline{
-                left:120px;
-                top:45px;
-                font-size:40px;
-            }
-            #instructionsp{
-               left:100px;
-                top:130px;
-            
-            }
+        <style> 
             #iframe{
                 margin-left:500px;
                 background-color:transparent;
                 border:none;
-            }
-            
-           
-            #howtoplayheadline{
-             top:229px;
-             left:120px;
-            
-            }
-            #howtoplayp{
-               
-                top:307px;
-                left:100px;
             }
              body{
                     margin:0;
@@ -93,34 +40,34 @@
     <body background="http://embed.polyvoreimg.com/cgi/img-thing/size/y/tid/134889552.jpg">
 
         <!--<object id ='iframe' width="900" height="900">
-        <param name="movie" value="test 1111.swf">
+        <parami name="movie" value="test 1111.swf">
         <embed src="test 1111.swf" width="100" height="100">
         </embed>
         </object>-->
-         <iframe id="iframe"allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/101390232 /?autostart=false" frameborder="0" allowfullscreen></iframe>
+         <iframe id="iframe" allowtransparency="true" width="772.13930348259" height="640" src="//scratch.mit.edu/projects/embed/101390232/?autostart=true" frameborder="0" allowfullscreen></iframe>
          <!-- //scratch.mit.edu/projects/embed/101390232 /?autostart=false -->
         <button id = "home_button" onclick="location.href='/';">Home</button>
-        <h3 class="instructions" id="instructionsheadline">Instructions:</h3>
-        
-            <ol class="instructions" id="instructionsp">
-                <li>If you see a big green flag,click it to load the game</li>
-                <br>
-                <li>Press the space key to start a new game </li>
-                <br>
-                <li>When you're ready, click inside the game to play!</li>
-            </ol>
-            <h3 class="instructions" id="howtoplayheadline">How to Play:</h3>
-            <ul class="instructions" id="howtoplayp">
-                <li>An item of trash will appear on the screen</li>
-                <br>
-                <li>While the item mover around, <br/> try to decide whether the item should be <br/> composted, recycled, or trashed, <br/> When the item stops in the red box, <br/> Use your arrow keys to sort it.<br>(left for compost, right for trash, down for recycle) </li>
-                <br>
-                <li>If you sort it in the wrong spot,<br>you will lose a life.  You have 10 lives!</li>
-        <br>
-        <li>Try to get a better score than your friends!</li>
-        </ul>
+       
 <!-- https://drive.google.com/file/d/0B-1SpBGKzZyLNVJ2eFI3a1hYdnM/view?usp=sharing -->
+<script>
+        var gameFrame = document.getElementById("iframe");
+        var w= window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+ 
+    var h = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    var gF_Top= (h - 640)/2;
+    var gF_Left= (w - 772.13930348259)/2;
+
+    gameFrame.style.top = gF_Top + "px";
+    gameFrame.style.left = gF_Left + "px";
+    
+    
+    </script>
     </body>
+    
     
 </html>
 <!-- <div style="height: 50px; width: 242px; background: #666 url('http://z.hubimg.com/x/quiz.png') no-repeat scroll 24px 10px;"></div><div style="border-left: 1px solid #ccc; border-right: 1px solid #ccc; width: 240px;">
