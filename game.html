@@ -35,6 +35,9 @@
                 background-color:black;
                 color: #99FFFF;
              }
+             #iframe{
+                 position:absolute;
+             }
         </style>
     </head>
     <body background="http://embed.polyvoreimg.com/cgi/img-thing/size/y/tid/134889552.jpg">
@@ -53,8 +56,8 @@
     </body>
     
     <script>
-        var gameFrame = document.getElementById("iframe");
-        var w= window.innerWidth
+    var gameFrame = document.getElementById("iframe");
+    var w= window.innerWidth
     || document.documentElement.clientWidth
     || document.body.clientWidth;
  
@@ -65,11 +68,12 @@
     var gF_Left= (w - 772)/2;
     var gftopreal = gF_Top + "px";
     var gfleftreal = gF_Left + "px";
+    go();
     window.addEventListener('resize', go);
     
     function go(){
-    gameFrame.style.marginTop = gftopreal;
-    gameFrame.style.marginLeft = gfleftreal;  
+    gameFrame.style.top = gftopreal;
+    gameFrame.style.left = gfleftreal;  
     }
     
     
